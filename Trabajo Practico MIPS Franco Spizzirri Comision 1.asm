@@ -396,12 +396,8 @@ Borrar_objt:
     	move $t1, $v0  # ID buscado
     	lw $t2, 4($t0) # Primer objeto
     	
-    	#lw $t3, 4($t2) #ID del primer objeto
-    	#blt $t1, $t3, not_found
-    	
     	lw $t4, 0($t2) # ultimo objeto
     	lw $t3, 4($t4) #ID ultimo objeto
-    	#bgt $t1, $t3, not_found
     	li $t5, 0
   
     	move $a1, $t2
